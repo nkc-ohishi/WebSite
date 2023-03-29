@@ -502,3 +502,40 @@ border-radius:5px 5px 0 0;
 	
 	#mainBanner h2,#mainBanner h3{font-size:80%;}
 }
+
+/*--------------------------------------
+　トップへスクロール
+---------------------------------------*/
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: 90%;
+}
+#back-top a {
+	width: 50px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+}
+#back-top a:hover {
+	color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-bottom: 7px;
+	background: #eae5e3 url(https://nkc-ohishi.github.io/WebSite/images/btt.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#back-top a:hover span {
+	background-color: #eee;
+}
