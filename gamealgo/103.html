@@ -84,153 +84,73 @@
 <!-- コンテンツ -->
 	<section id="main">
 		<section class="content" id="menu01">
-			<h3 class="heading">コンピュータがアプリケーションを実行するまで</h3>
+			<h3 class="heading">UnityにVisualStudioをエディターとして登録する</h3>
 			<article>
-				<p>１．アプリはストレージに保存されている</p>
-				<p>２．アプリが起動すると、ストレージからメモリにコピーされる</p>
-				<p>３．CPUがメモリにコピーされたアプリを実行する</p>
-				<p>４．アプリが終了すればメモリにコピーされたアプリは消去される</p>
+				<p>Unity Menu Edit - Preferences... - External Tools - External Script Editor - Browse...</p>
+				<p>「C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe」を選択</p>
 				<p>　</p>
-				<p>用語</p>
-				<p>CPU（Cセントラル・Pプロセッシング・Uユニット。中央処理装置）</p>
-				<p>　・プログラムの命令に従って、制御、演算を行う</p>
-				<p>　</p>
-				<p>ストレージ</p>
-				<p>　・ハードディスクやSSDのこと</p>
-				<p>　・情報処理用語では、「２次記憶装置」とも呼ぶ</p>
-				<p>　・外付けのUSBメモリ等は「オフラインストレージ」とも呼ばれる</p>
-				<p>　</p>
-				<p>メモリ</p>
-				<p>　・CPUで処理するプログラムやデータを一時的に置いておく場所</p>
-				<p>　・情報処理用語では、「主記憶装置・１次記憶装置」とも呼ぶ</p>
-				<p></p>
-
 			</article>
 		</section>
-		<section class="content">
-			<h3 class="heading">アプリケーション（実行ファイル）ができるまで</h3>
+		<section class="content" id="menu02">
+			<h3 class="heading">問題２</h3>
 			<article>
-				<p>・人間がプログラム言語を利用して命令書を作る</p>
-				<p>・人間が作った命令書をコンピュータが理解できる命令書に変換する（コンパイル）</p>
-				<p>・変換された命令書のことをアプリケーション（実行ファイル）と呼ぶ</p>
 				<p>　</p>
-				<p>実行ファイル</p>
-				<p>Windows　→　.exe</p>
-				<p>Mac　→　.app</p>
-				<p>Android　→　.apk</p>
-				<p>iOS　→　.ipa</p>
 				<p>　</p>
-				<p>※ コンピュータが理解できる命令書を作成するアプリケーションがVisualStudio</p>
-				<p></p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
 			</article>
 		</section>
-		<section class="content">
-			<h3 class="heading">C#を勉強する上で最低限、覚えなければならない用語</h3>
+		<section class="content" id="menu03">
+			<h3 class="heading">問題３</h3>
 			<article>
-				<p>クラス</p>
-				<p>　・スクリプトの構成単位。Unityでは基本1スクリプト1ファイル。</p>
-				<p>　・ファイル名とクラス名は同じでなければならない。</p>
 				<p>　</p>
-				<p>変数</p>
-				<p>　・プログラム上で、何かの値を名前を付けて保存するすることができる入れ物のようなもの。</p>
 				<p>　</p>
-				<p>メソッド</p>
-				<p>　・プログラマが命令した通りに、何かしらの仕事をしてくれる頼もしい奴ら。</p>
 				<p>　</p>
-				<p>引数</p>
-				<p>　・プログラマが、メソッドに仕事を依頼するときに渡す値（情報）。ない場合もある。</p>
 				<p>　</p>
-				<p>戻り値</p>
-				<p>　・プログラマが、メソッドに仕事を依頼し、仕事をした結果の報告値。ない場合もある。</p>
 				<p>　</p>
-				<p>実行ファイル</p>
-				<p>Windows　→　.exe</p>
-				<p>Mac　→　.app</p>
-				<p>Android　→　.apk</p>
-				<p>iOS　→　.ipa</p>
 				<p>　</p>
-				<p>※　この授業ではざっくり説明するので、詳しくはプログラミング技法の先生に聞いてください。</p>
-				<p></p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
 			</article>
 		</section>
-		<section class="content">
-			<h3 class="heading">いちからコードを書いてみる</h3>
+		<section class="content" id="menu04">
+			<h3 class="heading">問題４</h3>
 			<article>
-				<p>大前提</p>
-				<p>　・C#プログラムは、メソッドの組み合わせでできている</p>
 				<p>　</p>
-				<p>メソッドのテンプレート</p>
-				<p>　戻り値の型　メソッド名（引数）</p>
-				<p>　{</p>
-				<p>　　仕事の内容</p>
-				<p>　}</p>
 				<p>　</p>
-				<p>・既存のメソッドを使ったり、新しいメソッドを作ったりしてプログラムを構築する</p>
 				<p>　</p>
-				<p>・C#プログラムはMainメソッドから開始される</p>
-				<p>　　(Unityはいろいろな処理が秘密裏に行われており、Mainメソッドは隠れている)</p>
 				<p>　</p>
-				<p>手順１．Mainメソッドを用意する</p>
 				<p>　</p>
-				<p>　　仕様</p>
-				<p>　　メソッド名　Main（決まっている）</p>
-				<p>　　引　数　　　なし</p>
-				<p>　　戻り値　　　なし</p>		
 				<p>　</p>
-				<p>　　void Main()</p>
-				<p>　　{</p>
 				<p>　</p>
-				<p>　　}</p>
-				<p> ※ C#には様々なルールがあり、これだけではエラーになる。</p>
 				<p>　</p>
-				<p>手順２．ルールその１．「メソッドはクラス内に書かなければいけない」</p>
-				<p>　　　　↓</p>
-				<p>　　　　ファイル名と同じ名前のクラスを作り、クラスのブロック内にMainメソッドを記述する。</p>
-				<p>　　　　例）</p>
-				<p>　　　　class Program</p>
-				<p>　　　　{</p>		
-				<p>　　　　　　void Main()</p>
-				<p>　　　　　　{</p>
 				<p>　</p>
-				<p>　　　　　　}</p>
-				<p>　　　　}</p>
 				<p>　</p>
-				<p>手順３．ルールその２．「Mainメソッドは静的メソッドでなければならない」</p>
-				<p>　　　　↓</p>
-				<p>　　　　戻り値の型の前に「static」をつける</p>
-				<p>　　　　例）</p>
-				<p>　　　　class Program</p>
-				<p>　　　　{</p>		
-				<p>　　　　　　static void Main()</p>
-				<p>　　　　　　{</p>
-				<p>　</p>
-				<p>　　　　　　}</p>
-				<p>　　　　}</p>
-				<p>　　　　※ これでエラーが無くなるはず。（最小のC#プログラム）</p>
-
 			</article>
 		</section>
-		<section class="content">
-			<h3 class="heading">新規プロジェクトを作成する</h3>
+		<section class="content" id="menu05">
+			<h3 class="heading">問題５</h3>
 			<article>
-				<p>・Unity Hubを起動し、右上の「新しいプロジェクト」をクリックする</p>
 				<p>　</p>
-				<p>・以下の通り、設定して、右下の「プロジェクトを作成」をクリックする</p>
-				<p>　プロジェクト名 「gameAlgo000」 </p>
-				<p>　保存場所 「デスクトップ」</p>
-				<p>　テンプレート「３Dコア」</p>
-				<p>　※「２D」を選択した場合は、Hierarchyに「Main Camera」のみがデフォルトで用意される</p>
-				<p>　※「３D」を選択した場合は、Hierarchyに「Main Camera」と「Directional Light」が用意される</p>
 				<p>　</p>
-				<p>・レイアウトを「2 by 3」にする</p>
-				<p>　プロジェクトウィンドウを「One Column Layout」にする</p>
 				<p>　</p>
-				<p>・メニュー「File」-「Save Scene」をクリックし、Assetsの中にシーンを保存する</p>
-				<p>　ファイル名「GameScene.unity」</p>
-				<p></p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
+				<p>　</p>
 			</article>
 		</section>
-
 		<!--
 		<section class="content" id="menu02">
 			<h3 class="heading">〇〇〇〇〇〇〇〇〇〇〇</h3>
@@ -320,42 +240,15 @@
 
 	<aside id="sub">
     <section class="grid">
-		<h3>３Ⅾシューティングゲーム</h3>
-		<ul>
-			<li><a href="001.html#menu01">はじめに</a></li>
-			<li><a href="002.html#menu01">等速直線運動</a></li>
-			<li><a href="003.html#menu01">加速度運動</a></li>
-			<li><a href="004.html#menu01">向いている方向に移動</a></li>
-			<li><a href="005.html#menu01">弾を打つ</a></li>
-			<li><a href="006.html#menu01">敵を出す</a></li>
-			<li><a href="007.html#menu01">弾を当てる</a></li>
-			<li><a href="008.html#menu01">爆発させる</a></li>
-			<li><a href="009.html#menu01">スコアをつける</a></li>
-			<li><a href="010.html#menu01">シーン遷移</a></li>
-			<li><a href="011.html#menu01">制限時間をつける</a></li>
-			<li><a href="012.html#menu01">ランキング表示</a></li>
-		</ul>
-	</section>
-        
-    <section class="grid">
-			<h3>補足資料</h3>
+			<h3>トラブルシューティング</h3>
 			<ul>
-				<li><a href="101.html#menu01">用語</a></li>
-				<li><a href="102.html#menu01">Sceneビューの操作</a></li>
-				<li><a href="103.html#menu01">トラブルシューティング</a></li>
-				<li><a href="104.html#menu01">スクリプト置き場</a></li>
-				<li><a href="105.html#menu01">アセット置き場</a></li>
+				<li><a href="103.html#menu01">UnityにVisualStudioをエディターとして登録する</a></li>
+				<li><a href="103.html#menu02">問題２</a></li>
+				<li><a href="103.html#menu03">問題３</a></li>
+				<li><a href="103.html#menu04">問題４</a></li>
+				<li><a href="103.html#menu05">問題５</a></li>
 			</ul>
     </section>
-
-    <section class="grid">
-		<h3>リンク</h3>
-		<ul>
-			<li><a href="https://docs.unity3d.com/ja/current/ScriptReference/" target="_blank">日本語リファレンス</a></li>
-			<li><a href="https://assetstore.unity.com/ja" target="_blank">アセットストア</a></li>
-			<li><a href="https://www.itmedia.co.jp/keywords/algorithmer.html" target="_blank">最強最速アルゴリズマー養成講座</a></li>
-		</ul>
-	</section>
 
 	</aside>
 
