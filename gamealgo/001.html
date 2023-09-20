@@ -172,41 +172,46 @@
 				<p>　</p>
 				<p>手順１．Mainメソッドを用意する</p>
 				<p>　</p>
-				<p>　　仕様</p>
-				<p>　　メソッド名　Main（決まっている）</p>
-				<p>　　引　数　　　なし</p>
-				<p>　　戻り値　　　なし</p>		
+				<p>仕様</p>
+				<p>メソッド名　Main（決まっている）</p>
+				<p>引　数　　　なし</p>
+				<p>戻り値　　　なし</p>		
+				<pre><code>
+void Main()
+{
+
+}
+				</code></pre>
+
 				<p>　</p>
-				<p>　　void Main()</p>
-				<p>　　{</p>
-				<p>　</p>
-				<p>　　}</p>
 				<p> ※ C#には様々なルールがあり、これだけではエラーになる。</p>
 				<p>　</p>
 				<p>手順２．ルールその１．「メソッドはクラス内に書かなければいけない」</p>
 				<p>　　　　↓</p>
 				<p>　　　　ファイル名と同じ名前のクラスを作り、クラスのブロック内にMainメソッドを記述する。</p>
-				<p>　　　　例）</p>
-				<p>　　　　class Program</p>
-				<p>　　　　{</p>		
-				<p>　　　　　　void Main()</p>
-				<p>　　　　　　{</p>
-				<p>　</p>
-				<p>　　　　　　}</p>
-				<p>　　　　}</p>
-				<p>　</p>
+				<pre><code>
+class Program
+{		
+	void Main()
+	{
+
+	}
+}
+			</code></pre>
+			<p>　</p>
 				<p>手順３．ルールその２．「Mainメソッドは静的メソッドでなければならない」</p>
 				<p>　　　　↓</p>
 				<p>　　　　戻り値の型の前に「static」をつける</p>
-				<p>　　　　例）</p>
-				<p>　　　　class Program</p>
-				<p>　　　　{</p>		
-				<p>　　　　　　static void Main()</p>
-				<p>　　　　　　{</p>
-				<p>　</p>
-				<p>　　　　　　}</p>
-				<p>　　　　}</p>
-				<p>　　　　※ これでエラーが無くなるはず。（最小のC#プログラム）</p>
+				<pre><code>
+class Program
+{		
+	static void Main()
+	{
+
+	}
+}
+			</code></pre>
+			<p>　　　　※ これでエラーが無くなるはず。（最小のC#プログラム）</p>
 
 			</article>
 		</section>
