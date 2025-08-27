@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="GAMECG Taiken WebSite">
+	<meta name="keywords" content="">
+	<title>NKCUFO2D</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	 // hide #back-top first
+	 $("#back-top").hide();
+	 
+	 // fade in #back-top
+	 $(function () {
+	  $(window).scroll(function () {
+	   if ($(this).scrollTop() > 100) {
+		$('#back-top').fadeIn();
+	   } else {
+		$('#back-top').fadeOut();
+	   }
+	  });
+	  // scroll body to 0px on click
+	  $('#back-top a').click(function () {
+	   $('body,html').animate({
+		scrollTop: 0
+	   }, 400);
+	   return false;
+	  });
+	 });
+	});
+	</script>	
+</head>
+
+<body>
+<!-- ヘッダー -->
+<div id="header">
+	<div class="inner">
+	  	<h1>名古屋工学院専門学校　ゲーム・CG分野</h1>
+		<!-- ロゴ -->
+		<div class="logo">
+			<a href="index.html">GAMECG Taiken WebSite<br><span>ゲーム・CG分野　体験実習</span></a>
+		</div>
+		<!-- / ロゴ -->
+    
+		<!-- トップナビゲーション -->
+		<ul id="topnav">
+			<li class="active"><a href="../index.html">トップページ<br><span>Top</span></a></li>
+			<li><a href="../taiken1/index.html" target="_blank">体験１<br><span>NKC UFO 2D</span></a></li>
+			<li><a href="../taiken2/index.html" target="_blank">体験２<br><span>GoGoCriskey!!</span></a></li>
+			<li><a href="../taiken3/index.html" target="_blank">体験３<br><span>Tajima Contents</span></a></li>
+			<li><a href="../taiken4/index.html" target="_blank">体験４<br><span>Suwa Contents</span></a></li>
+			<li><a href="../taiken5/index.html" target="_blank">体験５<br><span>Wago Contents</span></a></li>
+		</ul>
+		<!-- トップナビゲーション -->
+  	</div>
+  
+</div>
+<!-- / ヘッダー -->
+
+<!-- メイン画像 -->
+<div id="mainBanner" class="subImg">
+	<div class="inner">
+		<img src="top.jpg" width="940" height="300" alt="">
+    	<div class="slogan">
+			<h3>本を買わないプログラマは成長しない。</h3>
+			<h3>新しいことにチャレンジしないプログラマはいらない。</h3>
+			<h3>在学中に行うべきことは、【自分で調べて問題を解決できる能力】を養うこと。</h3>
+			<h3>どんなことにも興味を持ち、実践してみる。</h3>
+			<h3>世の中のクリエイターは皆、そうやって生きています。</h3>
+		</div>
+	</div>
+</div>
+<!-- / メイン画像 -->
+
+
+<div id="wrapper">    
+<!-- コンテンツ -->
+	<section id="main">
+		<section class="content" id="menu01">
+			<h3 class="heading">Unityを起動してみよう</h3>
+			<article>
+				<p>「Unity Hub」をダブルクリックして新規プロジェクトを作成</p>
+				<p>テンプレート「２D」</p>
+				<p>プロジェクト名「Taiken」</p>
+				<p>保存先「デスクトップ」</p>
+				<p>「<a href="NKCUFO2D.unitypackage" download="NKCUFO2D.unitypackage">NKCUFO2D.unitypackage</a>」をインポート</p>
+			</article>
+		</section>
+		<section class="content" id="menu02">
+			<h3 class="heading">完成版で遊んでみよう</h3>
+			<article>
+				<p>Assets - Scenes - Complete をダブルクリック　→　再生</p>
+				<p>Enterキーでスタート</p>
+				<p>カーソルキーで移動</p>
+				<p>制限時間内にアイテムをすべて取ればクリアー</p>
+			</article>
+		</section>
+		<section class="content" id="menu03">
+			<h3 class="heading">背景を表示しよう</h3>
+			<article>
+				<p>Assets - Scenes - Taiken をダブルクリック</p>
+				<p>Assets - Sprites - Backgroundをヒエラルキーにドラッグ＆ドロップ</p>
+				<p>設定</p>
+				<p>　Sorting Layer:Background</p>
+				<p>　コンポーネントを追加（BoxCollider2Dを４つ追加）</p>
+				<p>　BoxCollider2D_01:左 Offset(-14.3, 0) Size(3.3, 31.64)</p>
+				<p>　BoxCollider2D_02:右 Offset( 14.3, 0) Size(3.3, 31.64)</p>
+				<p>　BoxCollider2D_03:上 Offset(0,  14.3) Size(31.64, 3.3)</p>
+				<p>　BoxCollider2D_04:下 Offset(0, -14.3) Size(31.64, 3.3)</p>
+			</article>
+		</section>
+		<section class="content" id="menu04">
+			<h3 class="heading">プレーヤーを作ろう</h3>
+			<article>
+				<p>Assets - Sprites - Playerをヒエラルキーにドラッグ＆ドロップ</p>
+				<p>設定</p>
+				<p>　Sorting Layer:Player</p>
+				<p>　</p>
+				<p>Rigidbody2Dコンポーネントを追加</p>
+				<p>　Gravity Scale 0</p>
+				<p>　</p>
+				<p>Assets - Scripts - PlayerController.csをアタッチ</p>
+				<p>PlayerController.csに以下の命令を追加</p>
+<pre><code>
+	// ここに命令を追加↓以下を追加
+　　rb2d.AddForce(moveVec * speed);
+
+</code></pre>
+				<p>　</p>
+				<p>Main Camera に Scripts - CameraController.cs を追加</p>
+			</article>
+		</section>
+		<section class="content" id="menu05">
+			<h3 class="heading">当たり判定を追加しよう</h3>
+			<article>
+				<p>PlayerにCircle Collider 2Dコンポーネントを追加</p>
+				<p>　Radius 2.15</p>
+				<p>　</p>
+				<p>※ 壁と当たるか確認する</p>
+			</article>
+		</section>
+		<section class="content" id="menu06">
+			<h3 class="heading">アイテムをつくろう</h3>
+			<article>
+				<p>Assets - Sprites - Pickup をヒエラルキーにドラッグ＆ドロップ</p>
+				<p>設定</p>
+				<p>　Sorting Layer:Pickups</p>
+				<p>　Tag - PickUp</p>
+				<p>　</p>
+				<p>Circle Collider 2Dコンポーネントを追加</p>
+				<p>　Radius 0.84</p>
+				<p>　Is Trigger ON</p>
+				<p>Assets - Scripts - Rotator.csをアタッチ</p>
+				<p>　</p>
+				<p>　※ 実行してプレーヤーが当たったら消えるか確認し、その後コピーして１２個配置する</p>
+			</article>
+		</section>
+		<section class="content" id="menu07">
+			<h3 class="heading">UIの表示</h3>
+			<article>
+				<p>Prefabs から Canvas をヒエラルキーに追加</p>
+				<p>Prefabs から SceneDirector をヒエラルキーに追加</p>
+				<p>　</p>
+				<p>※ Enterキーでスタート</p>
+				<p>※ 時間が余ったらアイテムの配置を考えて難易度を調整しよう</p>
+			</article>
+		</section>
+
+	</section>
+	<!-- / コンテンツ -->
+
+	<aside id="sub">
+    <section class="grid">
+			<h3>NKC UFO 2D</h3>
+			<ul>
+				<li><a href="index.html#menu01">Unityを起動してみよう</a></li>
+				<li><a href="index.html#menu02">完成版で遊んでみよう</a></li>
+				<li><a href="index.html#menu03">背景を表示しよう</a></li>
+				<li><a href="index.html#menu04">プレーヤーを作ろう</a></li>
+				<li><a href="index.html#menu05">当たり判定を追加しよう</a></li>
+				<li><a href="index.html#menu06">アイテムをつくろう</a></li>
+				<li><a href="index.html#menu07">UIを表示しよう</a></li>
+			</ul>
+		</section>        
+	</aside>
+
+</div>
+<!-- / WRAPPER -->
+
+<!-- フッター -->
+<div id="footer">
+	<div class="inner">
+    
+		<!-- 3カラム -->
+    <section class="gridWrapper">
+		<article class="grid">
+			<!-- ロゴ -->
+			  <p class="logo"><a href="index.html">GAMECG Taiken WebSite<br /><span>ゲーム・CG分野 体験実習</span></a></p>
+		  <!-- / ロゴ -->
+		  </article>
+	
+      <article class="grid col3">
+    	<ul>
+			<li><a href="https://www.denpa.ac.jp/" target="_blank">名古屋工学院専門学校</a></li>
+			<li><a href="https://twitter.com/nkc_denpa" target="_blank">Twitter</a></li>
+			<li><a href="https://page.line.me/nkc-denpa" target="_blank">LINE</a></li>
+			<li><a href="https://www.youtube.com/channel/UCS1gqkh4ATBwcORPLLRxWcw" target="_blank">Youtube</a></li>
+			<li><a href="https://www.instagram.com/nkc_denpa/" target="_blank">Instagram</a></li>
+		</ul>
+		<p>Copyright(c) 2023 名古屋工学院専門学校 All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a></p>
+      </article>
+		
+    </section>
+		<!-- / 3カラム -->
+      
+	</div>
+</div>
+<!-- / フッター -->
+<p id="back-top">
+    <a href="#top"><span></span></a>
+</p>
+</body>
+</html>

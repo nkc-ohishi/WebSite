@@ -1,0 +1,69 @@
+00_Unityを起動してみよう
+　・「Unity Hub」をダブルクリックして新規プロジェクトを作成
+　　テンプレート「２D」
+　　プロジェクト名「Taiken」
+　　保存先「デスクトップ」
+　・「Taiken30min.unitypackage」をプロジェクトウィンドウにD&Dでインポート
+　　
+01_完成版で遊んでみよう
+　・Assets - Scenes - Complete をダブルクリック　→　再生
+　・Enterキーでスタート
+　・カーソルキーで移動
+　・制限時間内にアイテムをすべて取ればクリアー
+
+02_背景を表示しよう
+　・Assets - Scenes - Taiken をダブルクリック
+　・Assets - Sprites - Backgroundをヒエラルキーにドラッグ＆ドロップ
+　　設定
+　　Sorting Layer:Background
+　　コンポーネントを追加（BoxCollider2Dを４つ追加）
+　　BoxCollider2D_01:左 Offset(-14.3, 0) Size(3.3, 31.64)
+　　BoxCollider2D_02:右 Offset( 14.3, 0) Size(3.3, 31.64)
+　　BoxCollider2D_03:上 Offset(0,  14.3) Size(31.64, 3.3)
+　　BoxCollider2D_04:下 Offset(0, -14.3) Size(31.64, 3.3)
+　　
+03_プレーヤーを作ろう
+　・Assets - Sprites - Playerをヒエラルキーにドラッグ＆ドロップ
+　設定
+　　Sorting Layer:Player
+　・コンポーネントを追加
+　　Rigidbody2D
+　　 - Gravity Scale 0
+　　
+　　Assets - Scripts - PlayerController.csをアタッチ
+
+	// ここに命令を追加↓以下を追加
+　　rb2d.AddForce(moveVec * speed);
+　　　　
+　Main Camera に Scripts - CameraController.cs を追加
+　※ プレーヤーを追従するカメラになる
+
+04_プレーヤーに当たり判定を追加しよう
+　・Playerにコンポーネントを追加
+　　Circle Collider 2D
+　　 - Radius 2.15
+　　※ 壁と当たるか確認する
+　　 
+05_アイテムをつくろう
+　・Assets - Sprites - Pickup をヒエラルキーにドラッグ＆ドロップ
+　設定
+　　Sorting Layer:Pickups
+  　Tag - PickUp
+
+　コンポーネントを追加
+　Circle Collider 2D
+　 - Radius 0.84
+　 - Is Trigger ON
+　Assets - Scripts - Rotator.csをアタッチ
+　※ 実行してプレーヤーが当たったら消えるか確認し、その後コピーして１２個配置する
+　
+06_UIを作成
+　Prefabs から Canvas をヒエラルキーに追加
+　Prefabs から SceneDirector をヒエラルキーに追加
+
+　※ Enterキーでスタート
+  ※ 完成
+
+※ 時間が余ったらアイテムの配置を考えてお互いプレイさせればいいが、３０分だとぎりぎりって感じかと思います。
+
+
